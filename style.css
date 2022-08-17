@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  a {
+    color: unset;
+  }
+
+  p {
+    margin: unset;
+  }
+
+  h1 {
+    margin: unset;
+  }
+
+  body {
+    margin: 0%;
+    background-image: url(./img/Rave\ New\ фасадный\ линейный\ светильник.jpg);
+    background-size:  cover;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .page {
+    height: 100vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .maincont {
+    height: 100%;
+    width: 60%;
+    background-color: grey;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  
+  .gallerycont {
+    height: 95%;
+    width: 60%;
+    background-color: rgba(67, 87, 95, 0.315);
+    backdrop-filter: blur(5px);
+    border: transparent;
+    border-radius: 26px;
+    position:relative; 
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+  }
+
+  .profilecont {
+    height: 90%;
+    width: 30%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+  }
+
+  .profilepicture{
+    height: 70%;
+    width: 80%;
+  }
+
+  .txtcont{
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .txtcont h1{
+    margin-bottom: 0%;
+    
+  }
+
+  .txtcont p {
+    margin-top: 30%;
+  }
+  .swiper-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+  }
+  .swiper {
+    width: 90%;
+    height: 100%;
+    display: block;
+    border: black;
+    border-radius: 16px;
+    
+    
+  }
+  .swiper-slide {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    
+  }
+  
+  .portftxt{
+    margin-top: 3%;
+    text-align: center;
+    font-size: x-large;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+    width: 83%;
+    color: white;
+  }
+ 
+  .swiper-wrapper .swiper-slide:first-child{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+  .swiper-wrapper .swiper-slide:first-child .portftxt{
+    text-align: left;
+    width: 49%;
+    overflow: hidden;
+    margin-left: 2%;
+    margin-top: 5%;
+  }
+  .swiper-wrapper .swiper-slide:first-child .portftxt p{
+    margin-top: 3%;
+  }
+  .swiper-wrapper .swiper-slide:first-child .photo {
+    overflow: hidden;
+    margin-top: 5%;
+    
+    border:black;
+    border-radius: 16px;
+    width: 40%;
+    min-height: 65%;
+    max-height: 70%;
+  }
+  
+  .swiper-slide img {
+    overflow: hidden;
+    margin-top: 5%;
+    border:black;
+    border-radius: 16px;
+    max-width: 80%;
+    min-height: 65%;
+    max-height: 70%;
+  }
+
