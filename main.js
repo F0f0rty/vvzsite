@@ -1,15 +1,16 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
-  loop: false,
-
   
   pagination: {
     el: '.swiper-pagination',
-    clickable: true
+    clickable: true,
   },
 
-
+  mousewheel: {
+    invert: false,
+    sensitivity: 20,
+  },
 
   effect: 'coverflow',
   coverflowEffect: {
@@ -18,10 +19,14 @@ const swiper = new Swiper('.swiper', {
     stretch: -1000,
   },
 
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+
   /*autoplay: {
     delay: 5000,
     disableOnInteraction: true,
 
   },*/
 });
-
