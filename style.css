@@ -178,7 +178,7 @@
     .swiper-wrapper .swiper-slide:first-child .photo {
       overflow: hidden;
       margin-top: 5%;
-      
+      object-fit: fill;
       border:black;
       border-radius: 16px;
       width: 80%;
@@ -205,6 +205,10 @@
       flex-wrap: nowrap;
       flex-direction: column;
       justify-content: center;
+    }
+
+    .swiper-wrapper .swiper-slide:first-child h1{
+      font-size: larger;
     }
 
     .swiper-wrapper .swiper-slide:nth-child(2){
