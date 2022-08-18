@@ -164,6 +164,10 @@
     display: none;
   }
   @media screen and (max-width: 420px) {
+
+    .page {
+      height: 100vh;
+    }
     .gallerycont{
       width: 90%;
       height: 75%;
@@ -219,14 +223,107 @@
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
-      
+      height: 100%;
     }
 
     .swiper-wrapper .swiper-slide:nth-child(2) p{
-      font-size: large;
+      font-size: fill;
       text-align: left;
       padding-bottom: 20px;
+      font-size: large;
     }
+
+
+
+    .swiper-wrapper .swiper-slide:first-child .portftxt{
+      width: 83%;
+      margin-top: 20%;
+      text-align: center;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 0px;
+      font-size: x-large;
+    }
+
+    .swiper-wrapper .swiper-slide:first-child p{
+      visibility: hidden;
+    }
+
+
+  }
+
+  @media screen and (max-width: 376px) {
+
+    .page {
+      height: 100vh;
+    }
+    .gallerycont{
+      width: 90%;
+      height: 75%;
+    }
+    p {
+      font-size: normal;
+    }
+    h1 {
+      font-size: large;
+    }
+
+    .swiper-wrapper .swiper-slide:first-child .photo {
+      overflow: hidden;
+      margin-top: 5%;
+      object-fit: fill;
+      border:black;
+      border-radius: 16px;
+      width: 80%;
+      min-height: 65%;
+      max-height: 70%;
+    }
+    .portftxt{
+      margin-top: 20%;
+      text-align: center;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 0px;
+      width: 83%;
+      color: white;
+    }
+    .swiper-slide img {
+      object-fit: cover;
+    }
+
+    .swiper-wrapper .swiper-slide:first-child{
+      display: flex;
+      align-items: center;
+      align-content: center;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .swiper-wrapper .swiper-slide:first-child h1{
+      font-size: larger;
+    }
+
+    .swiper-wrapper .swiper-slide:nth-child(2){
+      display: flex;
+    }
+
+    .swiper-wrapper .swiper-slide:nth-child(2) .portftxt{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      height: 100%;
+    }
+
+    .swiper-wrapper .swiper-slide:nth-child(2) p{
+      font-size: fill;
+      text-align: left;
+      padding-bottom: 20px;
+      font-size: medium;
+    }
+
+
+
     .swiper-wrapper .swiper-slide:first-child .portftxt{
       width: 83%;
       margin-top: 20%;
